@@ -291,8 +291,8 @@ git push origin main
 ```
 
 > ⚠️ **GitHub ไม่รับ password ธรรมดาแล้ว** ต้องใช้ Personal Access Token:  
-> GitHub → Settings → Developer settings → Personal access tokens → Generate new token
-
+> GitHub → Settings → Developer settings → Personal access tokens → Generateหาก new token
+> กรณี หากเข้า Password ไม่ได้ใช้วิธีนี้ แต่ถ้าปกติก็ Push ปกติ
 ---
 
 ## 🐛 Troubleshooting
@@ -303,7 +303,7 @@ git push origin main
 | `mvn: command not found` | Maven ไม่อยู่ใน PATH | ดู [ขั้นตอนที่ 2](#-ขั้นตอนที่-2--ติดตั้ง-apache-maven) |
 | Port 8080 already in use | มีแอปอื่นใช้ port อยู่ | แก้ `server.port=9090` ใน `application.properties` |
 | `BUILD FAILURE` ตอน compile | Java syntax error | ดูบรรทัดที่ขึ้น `ERROR` ใน console |
-| กด Push แล้วขอ login | GitHub ต้องการ token | ใช้ Personal Access Token แทน password |
+| กด Push แล้วขอ login | GitHub ต้องการ token | ใช้ Personal Access Token แทน password |**** หากเข้าได้ปกติไม่ต้องทำ****
 
 ---
 
